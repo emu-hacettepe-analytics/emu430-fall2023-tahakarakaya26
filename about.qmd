@@ -5,26 +5,32 @@ sidebar: false
 
 # Education
 
--   B.S., Industrial Engineering, Hacettepe University, Turkey, 2001 - ongoing.
+-   B.S., Industrial Engineering, Hacettepe University, Turkey, 2019 - Present
+
+-   Erasmus+, Management and Economy, University of Lodz, Poland, 02.2022 - 07.2022
 
 # Work Experience
 
-## Employements
-
-1.  Firm xxx, position xx, year xxx
-
-2.  Firm yyy, position yyy, year yyy
-
 ## Internships
 
-1.  Firm aaa, position xx, year xxx
+1.  Turkish Aerospace Industries, Business Analyst Intern,
+07.2023 - 08.2023
 
-2.  Firm bbb, position yyy, year yyy
+2.  The Ministry of Industry and Technology, Research Intern,
+08.2023 - 09.2023
+
+3.  Vispera Information Technologies, Data & Insight Analyst Intern,
+09.2023 - 10.2023
 
 # Projects
 
+Turkish Aerospace Lift-Up Graduation Project - "Demand Correlation Analysis, Storage Assignment, Vehicle Route Planning",
+10.2023 - Present
+
 # Competencies
 
-R, Quarto, Git, Python
+R, Quarto, Git, Python, Solidworks, Data Analysis
 
 # Hobbies
+
+Rugby, Billards, Chess
