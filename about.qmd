@@ -13,19 +13,36 @@ sidebar: false
 
 ## Internships
 
-1.  Turkish Aerospace Industries, Business Analyst Intern,
+-   Turkish Aerospace Industries, Business Analyst Intern, Ankara,
 07.2023 - 08.2023
 
-2.  The Ministry of Industry and Technology, Research Intern,
+-   The Ministry of Industry and Technology, Research Intern, Ankara,
 08.2023 - 09.2023
 
-3.  Vispera Information Technologies, Data & Insight Analyst Intern,
+-   Vispera Information Technologies, Data & Insight Analyst Intern, Remote,
 09.2023 - 10.2023
 
 # Projects
 
-Turkish Aerospace Lift-Up Graduation Project - "Demand Correlation Analysis, Storage Assignment, Vehicle Route Planning",
+-   Turkish Aerospace Lift-Up Graduation Project - "Demand Correlation Analysis, Storage Assignment, Vehicle Route Planning",
 10.2023 - Present
+
+# Certificates
+
+-   Data Science Bootcamp, TechPro Education, 07.2023
+
+-   Exploratory Data Analysis for Machine Learning, IBM, 10.2023
+[https://www.coursera.org/account/accomplishments/certificate/EX2BUDNKARYY](#0){.uri}
+
+-   YEA Exclusive, Young Executive Academy, 08.2023
+Verification Code: YEA370314762 
+[https://verified.youngexecutiveacademy.com/](#0){.uri}
+
+-   YetGen & Paribu Hub Blockchain Fundamentals Training Program, YetGen, 06.2023
+[https://verified.sertifier.com/tr/verify/44545373777946/](#0){.uri}
+
+-   YetGen Basic, YetGen, 02.2023
+[https://verified.sertifier.com/en/verify/55582192283929/](#0){.uri}
 
 # Competencies
 
