@@ -4,12 +4,48 @@ title: "Assignment 1"
 
 # Assignment 1
 
-```{r}
-1 + 1
+```         
 ```
 
-My first assignment has two parts.
+My first assignment has three parts.
 
 ## (a)
 
-## (b)
+In that part, I watched a conference talk (<https://www.rstudio.com/conference/2022/talks/develop-deploy-python-rstudio/>) related to Model Building and Deployment in R.\
+Firstly, I chose the conference talk because I thought that we could use R software language only to examine the data, make mathematical operations more understandable and faster. As I learned from the conference, we can perform not only these operations, but also more advanced operations.\
+In even more detail, they said that model building and model deployment processes can be even performed in R via programs like Workbench and Shiny.\
+To sum up, Workbench enables idle's such as VSCode and Jupyter to work in integration with the R program, the Shiny program is used to report the output of the model in the web interface and to design an interactive web interface.
+
+## (b) 3 Differences between R and Python Languages
+
+The biggest between them is creators. The constructors of the R programming language are statisticians, the constructors of Python are not.
+
+```{i = i + 1 #in python, we use this for loop and while functions to get this step or variable to the next step. which means a counter}
+```
+
+```{i <- i + 1 #in r, we can assign the variable like that}
+
+```
+
+The other difference is that Python is an Objected-Oriented Program but R is a Functional Programming Language.
+
+Last difference is that Python can run faster than R generally but R is optimized for statistical operations and can perform efficient operations on large data sets.
+
+## (c) dslabs, replacing missing values to 0
+
+```{install.packages("dslabs")}
+library(dslabs)
+data(na_example)
+#ı could not install the packages, I will try after the submission sir :(
+```
+
+```{na_example}
+```
+
+```{sum(is.na(na_example))}
+```
+
+```{data <- na_example}
+data[is.na(data)] <-0
+data
+```

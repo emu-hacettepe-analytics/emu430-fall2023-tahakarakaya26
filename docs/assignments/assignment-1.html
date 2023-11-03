@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.3.433">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>[Student/Group Full Name]’s Analytics Lab - Assignment 1</title>
+<title>Taha Karakaya’s Analytics Lab - Assignment 1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,40 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -110,7 +76,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">[Student/Group Full Name]’s Analytics Lab</span>
+    <span class="navbar-title">Taha Karakaya’s Analytics Lab</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -208,7 +174,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#assignment-1" id="toc-assignment-1" class="nav-link active" data-scroll-target="#assignment-1">Assignment 1</a>
   <ul class="collapse">
   <li><a href="#a" id="toc-a" class="nav-link" data-scroll-target="#a">(a)</a></li>
-  <li><a href="#b" id="toc-b" class="nav-link" data-scroll-target="#b">(b)</a></li>
+  <li><a href="#b-3-differences-between-r-and-python-languages" id="toc-b-3-differences-between-r-and-python-languages" class="nav-link" data-scroll-target="#b-3-differences-between-r-and-python-languages">(b) 3 Differences between R and Python Languages</a></li>
+  <li><a href="#c-dslabs-replacing-missing-values-to-0" id="toc-c-dslabs-replacing-missing-values-to-0" class="nav-link" data-scroll-target="#c-dslabs-replacing-missing-values-to-0">(c) dslabs, replacing missing values to 0</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -239,18 +206,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="assignment-1" class="level1">
 <h1>Assignment 1</h1>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
-</div>
-</div>
-<p>My first assignment has two parts.</p>
+<pre><code></code></pre>
+<p>My first assignment has three parts.</p>
 <section id="a" class="level2">
 <h2 class="anchored" data-anchor-id="a">(a)</h2>
+<p>In that part, I watched a conference talk (<a href="https://www.rstudio.com/conference/2022/talks/develop-deploy-python-rstudio/" class="uri">https://www.rstudio.com/conference/2022/talks/develop-deploy-python-rstudio/</a>) related to Model Building and Deployment in R.<br>
+Firstly, I chose the conference talk because I thought that we could use R software language only to examine the data, make mathematical operations more understandable and faster. As I learned from the conference, we can perform not only these operations, but also more advanced operations.<br>
+In even more detail, they said that model building and model deployment processes can be even performed in R via programs like Workbench and Shiny.<br>
+To sum up, Workbench enables idle’s such as VSCode and Jupyter to work in integration with the R program, the Shiny program is used to report the output of the model in the web interface and to design an interactive web interface.</p>
 </section>
-<section id="b" class="level2">
-<h2 class="anchored" data-anchor-id="b">(b)</h2>
+<section id="b-3-differences-between-r-and-python-languages" class="level2">
+<h2 class="anchored" data-anchor-id="b-3-differences-between-r-and-python-languages">(b) 3 Differences between R and Python Languages</h2>
+<p>The biggest between them is creators. The constructors of the R programming language are statisticians, the constructors of Python are not.</p>
+<p><code>{i = i + 1 #in python, we use this for loop and while functions to get this step or variable to the next step. which means a counter}</code></p>
+<pre class="{i <- i + 1 #in r, we can assign the variable like that}"><code></code></pre>
+<p>The other difference is that Python is an Objected-Oriented Program but R is a Functional Programming Language.</p>
+<p>Last difference is that Python can run faster than R generally but R is optimized for statistical operations and can perform efficient operations on large data sets.</p>
+</section>
+<section id="c-dslabs-replacing-missing-values-to-0" class="level2">
+<h2 class="anchored" data-anchor-id="c-dslabs-replacing-missing-values-to-0">(c) dslabs, replacing missing values to 0</h2>
+<p><code>{install.packages("dslabs")} library(dslabs) data(na_example) #ı could not install the packages, I will try after the submission sir :(</code></p>
+<pre class="{na_example}"><code></code></pre>
+<p><code>{sum(is.na(na_example))}</code></p>
+<pre class="{data <- na_example}"><code>data[is.na(data)] &lt;-0
+data</code></pre>
 
 
 </section>
