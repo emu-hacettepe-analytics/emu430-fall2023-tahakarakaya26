@@ -1,10 +1,22 @@
 ---
 title: "Assignment 1"
+
+format:
+  html: 
+    code-fold: true
+    code-summary: "Show the code"
 ---
 
-# Assignment 1
-
 ```         
+```
+```{r, message=FALSE, results='asis'}
+library(tidyverse)
+library(rvest)
+library(stringr)
+library(reshape2)
+library(ggplot2)
+library(knitr)
+library(httr)
 ```
 
 My first assignment has three parts.
@@ -33,14 +45,15 @@ Last difference is that Python can run faster than R generally but R is optimize
 
 ## (c) dslabs, replacing missing values to 0
 
-`{install.packages("dslabs")} library(dslabs) data(na_example) #ı could not install the packages, I will try after the submission sir :(`
-
-```{na_example}
+```{r}
+library(dslabs)
+data(na_example)
+na_example
 ```
 
-`{sum(is.na(na_example))}`
 
-```{data <- na_example}
+```{r}
+data <- na_example
 data[is.na(data)] <-0
 data
 ```

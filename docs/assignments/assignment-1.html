@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -171,12 +205,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#assignment-1" id="toc-assignment-1" class="nav-link active" data-scroll-target="#assignment-1">Assignment 1</a>
-  <ul class="collapse">
-  <li><a href="#a" id="toc-a" class="nav-link" data-scroll-target="#a">(a)</a></li>
+  <li><a href="#a" id="toc-a" class="nav-link active" data-scroll-target="#a">(a)</a></li>
   <li><a href="#b-3-differences-between-r-and-python-languages" id="toc-b-3-differences-between-r-and-python-languages" class="nav-link" data-scroll-target="#b-3-differences-between-r-and-python-languages">(b) 3 Differences between R and Python Languages</a></li>
   <li><a href="#c-dslabs-replacing-missing-values-to-0" id="toc-c-dslabs-replacing-missing-values-to-0" class="nav-link" data-scroll-target="#c-dslabs-replacing-missing-values-to-0">(c) dslabs, replacing missing values to 0</a></li>
-  </ul></li>
   </ul>
 </nav>
 </nav>
@@ -204,9 +235,17 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="assignment-1" class="level1">
-<h1>Assignment 1</h1>
 <pre><code></code></pre>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rvest)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stringr)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(reshape2)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(knitr)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(httr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <p>My first assignment has three parts.</p>
 <section id="a" class="level2">
 <h2 class="anchored" data-anchor-id="a">(a)</h2>
@@ -218,21 +257,115 @@ To sum up, Workbench enables idle’s such as VSCode and Jupyter to work in inte
 <section id="b-3-differences-between-r-and-python-languages" class="level2">
 <h2 class="anchored" data-anchor-id="b-3-differences-between-r-and-python-languages">(b) 3 Differences between R and Python Languages</h2>
 <p>The biggest between them is creators. The constructors of the R programming language are statisticians, the constructors of Python are not.</p>
-<p><code>{i = i + 1 #in python, we use this for loop and while functions to get this step or variable to the next step. which means a counter}</code></p>
-<pre class="{i <- i + 1 #in r, we can assign the variable like that}"><code></code></pre>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<pre class="i cell-code"><code></code></pre>
+</details>
+</div>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<pre class="i cell-code"><code></code></pre>
+</details>
+</div>
 <p>The other difference is that Python is an Objected-Oriented Program but R is a Functional Programming Language.</p>
 <p>Last difference is that Python can run faster than R generally but R is optimized for statistical operations and can perform efficient operations on large data sets.</p>
 </section>
 <section id="c-dslabs-replacing-missing-values-to-0" class="level2">
 <h2 class="anchored" data-anchor-id="c-dslabs-replacing-missing-values-to-0">(c) dslabs, replacing missing values to 0</h2>
-<p><code>{install.packages("dslabs")} library(dslabs) data(na_example) #ı could not install the packages, I will try after the submission sir :(</code></p>
-<pre class="{na_example}"><code></code></pre>
-<p><code>{sum(is.na(na_example))}</code></p>
-<pre class="{data <- na_example}"><code>data[is.na(data)] &lt;-0
-data</code></pre>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dslabs)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(na_example)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>na_example</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>   [1]  2  1  3  2  1  3  1  4  3  2  2 NA  2  2  1  4 NA  1  1  2  1  2  2  1
+  [25]  2  5 NA  2  2  3  1  2  4  1  1  1  4  5  2  3  4  1  2  4  1  1  2  1
+  [49]  5 NA NA NA  1  1  5  1  3  1 NA  4  4  7  3  2 NA NA  1 NA  4  1  2  2
+  [73]  3  2  1  2  2  4  3  4  2  3  1  3  2  1  1  1  3  1 NA  3  1  2  2  1
+  [97]  2  2  1  1  4  1  1  2  3  3  2  2  3  3  3  4  1  1  1  2 NA  4  3  4
+ [121]  3  1  2  1 NA NA NA NA  1  5  1  2  1  3  5  3  2  2 NA NA NA NA  3  5
+ [145]  3  1  1  4  2  4  3  3 NA  2  3  2  6 NA  1  1  2  2  1  3  1  1  5 NA
+ [169] NA  2  4 NA  2  5  1  4  3  3 NA  4  3  1  4  1  1  3  1  1 NA NA  3  5
+ [193]  2  2  2  3  1  2  2  3  2  1 NA  2 NA  1 NA NA  2  1  1 NA  3 NA  1  2
+ [217]  2  1  3  2  2  1  1  2  3  1  1  1  4  3  4  2  2  1  4  1 NA  5  1  4
+ [241] NA  3 NA NA  1  1  5  2  3  3  2  4 NA  3  2  5 NA  2  3  4  6  2  2  2
+ [265] NA  2 NA  2 NA  3  3  2  2  4  3  1  4  2 NA  2  4 NA  6  2  3  1 NA  2
+ [289]  2 NA  1  1  3  2  3  3  1 NA  1  4  2  1  1  3  2  1  2  3  1 NA  2  3
+ [313]  3  2  1  2  3  5  5  1  2  3  3  1 NA NA  1  2  4 NA  2  1  1  1  3  2
+ [337]  1  1  3  4 NA  1  2  1  1  3  3 NA  1  1  3  5  3  2  3  4  1  4  3  1
+ [361] NA  2  1  2  2  1  2  2  6  1  2  4  5 NA  3  4  2  1  1  4  2  1  1  1
+ [385]  1  2  1  4  4  1  3 NA  3  3 NA  2 NA  1  2  1  1  4  2  1  4  4 NA  1
+ [409]  2 NA  3  2  2  2  1  4  3  6  1  2  3  1  3  2  2  2  1  1  3  2  1  1
+ [433]  1  3  2  2 NA  4  4  4  1  1 NA  4  3 NA  1  3  1  3  2  4  2  2  2  3
+ [457]  2  1  4  3 NA  1  4  3  1  3  2 NA  3 NA  1  3  1  4  1  1  1  2  4  3
+ [481]  1  2  2  2  3  2  3  1  1 NA  3  2  1  1  2 NA  2  2  2  3  3  1  1  2
+ [505] NA  1  2  1  1  3  3  1  3  1  1  1  1  1  2  5  1  1  2  2  1  1 NA  1
+ [529]  4  1  2  4  1  3  2 NA  1  1 NA  2  1  1  4  2  3  3  1  5  3  1  1  2
+ [553] NA  1  1  3  1  3  2  4 NA  2  3  2  1  2  1  1  1  2  2  3  1  5  2 NA
+ [577]  2 NA  3  2  2  2  1  5  3  2  3  1 NA  3  1  2  2  2  1  2  2  4 NA  6
+ [601]  1  2 NA  1  1  2  2  3 NA  3  2  3  3  4  2 NA  2 NA  4 NA  1  1  2  2
+ [625]  3  1  1  1  3 NA  2  5 NA  7  1 NA  4  3  3  1 NA  1  1  1  1  3  2  4
+ [649]  2  2  3 NA NA  1  4  3  2  2  2  3  2  4  2  2  4 NA NA NA  6  3  3  1
+ [673]  4  4  2  1 NA  1  6 NA  3  3  2  1  1  6 NA  1  5  1 NA  2  6  2 NA  4
+ [697]  1  3  1  2 NA  1  1  3  1  2  4  2  1  3  2  4  3  2  2  1  1  5  6  4
+ [721]  2  2  2  2  4 NA  1  2  2  2  2  4  5 NA NA NA  4  3  3  3  2  4  2  4
+ [745] NA NA NA NA  2  1 NA  2  4  3  2 NA  2  3  1  3  4 NA  1  2  1  2 NA  3
+ [769]  1  2  1  2  1  2  1  2  2  2  2  1  1  3  3  1  3  4  3 NA NA  4  2  3
+ [793]  2  1  3  2  4  2  2  3  1  2  4  3  3  4 NA  1  4  2  1  1  1  3  1  5
+ [817]  2  2  4  2 NA  1  3  1  2 NA  1  2  1  2  1 NA  1  3  2  3  2 NA  2  1
+ [841]  4  2 NA NA NA  2  4  2 NA NA  3  1 NA  5  5  2  2  2 NA  2  1  3  1  3
+ [865]  2  4  2  4 NA  4  1  2  3  2  3  3  2  3  2  2  2  1  3  2  4  2 NA  3
+ [889]  3  2  2 NA NA  3  2  1  2  4  1  1  1  1  4  3  2 NA  3  2 NA  1 NA  3
+ [913]  2  1  1  1  2 NA  2  2  3  3  2 NA NA  4  5  2  2  2  1  2  3  1  3  3
+ [937]  4  3 NA  1  1  1 NA  4  3  5  1  1  2 NA  2  2  2  2  5  2  2  3  1  2
+ [961]  3 NA  1  2 NA NA  2 NA  3  1  1  2  5  3  5  1  1  4 NA  2  1  3  1  1
+ [985]  2  4  3  3  3 NA  1  1  2  2  1  1  2  2 NA  2</code></pre>
+</div>
+</div>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> na_example</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>data[<span class="fu">is.na</span>(data)] <span class="ot">&lt;-</span><span class="dv">0</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>data</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>   [1] 2 1 3 2 1 3 1 4 3 2 2 0 2 2 1 4 0 1 1 2 1 2 2 1 2 5 0 2 2 3 1 2 4 1 1 1 4
+  [38] 5 2 3 4 1 2 4 1 1 2 1 5 0 0 0 1 1 5 1 3 1 0 4 4 7 3 2 0 0 1 0 4 1 2 2 3 2
+  [75] 1 2 2 4 3 4 2 3 1 3 2 1 1 1 3 1 0 3 1 2 2 1 2 2 1 1 4 1 1 2 3 3 2 2 3 3 3
+ [112] 4 1 1 1 2 0 4 3 4 3 1 2 1 0 0 0 0 1 5 1 2 1 3 5 3 2 2 0 0 0 0 3 5 3 1 1 4
+ [149] 2 4 3 3 0 2 3 2 6 0 1 1 2 2 1 3 1 1 5 0 0 2 4 0 2 5 1 4 3 3 0 4 3 1 4 1 1
+ [186] 3 1 1 0 0 3 5 2 2 2 3 1 2 2 3 2 1 0 2 0 1 0 0 2 1 1 0 3 0 1 2 2 1 3 2 2 1
+ [223] 1 2 3 1 1 1 4 3 4 2 2 1 4 1 0 5 1 4 0 3 0 0 1 1 5 2 3 3 2 4 0 3 2 5 0 2 3
+ [260] 4 6 2 2 2 0 2 0 2 0 3 3 2 2 4 3 1 4 2 0 2 4 0 6 2 3 1 0 2 2 0 1 1 3 2 3 3
+ [297] 1 0 1 4 2 1 1 3 2 1 2 3 1 0 2 3 3 2 1 2 3 5 5 1 2 3 3 1 0 0 1 2 4 0 2 1 1
+ [334] 1 3 2 1 1 3 4 0 1 2 1 1 3 3 0 1 1 3 5 3 2 3 4 1 4 3 1 0 2 1 2 2 1 2 2 6 1
+ [371] 2 4 5 0 3 4 2 1 1 4 2 1 1 1 1 2 1 4 4 1 3 0 3 3 0 2 0 1 2 1 1 4 2 1 4 4 0
+ [408] 1 2 0 3 2 2 2 1 4 3 6 1 2 3 1 3 2 2 2 1 1 3 2 1 1 1 3 2 2 0 4 4 4 1 1 0 4
+ [445] 3 0 1 3 1 3 2 4 2 2 2 3 2 1 4 3 0 1 4 3 1 3 2 0 3 0 1 3 1 4 1 1 1 2 4 3 1
+ [482] 2 2 2 3 2 3 1 1 0 3 2 1 1 2 0 2 2 2 3 3 1 1 2 0 1 2 1 1 3 3 1 3 1 1 1 1 1
+ [519] 2 5 1 1 2 2 1 1 0 1 4 1 2 4 1 3 2 0 1 1 0 2 1 1 4 2 3 3 1 5 3 1 1 2 0 1 1
+ [556] 3 1 3 2 4 0 2 3 2 1 2 1 1 1 2 2 3 1 5 2 0 2 0 3 2 2 2 1 5 3 2 3 1 0 3 1 2
+ [593] 2 2 1 2 2 4 0 6 1 2 0 1 1 2 2 3 0 3 2 3 3 4 2 0 2 0 4 0 1 1 2 2 3 1 1 1 3
+ [630] 0 2 5 0 7 1 0 4 3 3 1 0 1 1 1 1 3 2 4 2 2 3 0 0 1 4 3 2 2 2 3 2 4 2 2 4 0
+ [667] 0 0 6 3 3 1 4 4 2 1 0 1 6 0 3 3 2 1 1 6 0 1 5 1 0 2 6 2 0 4 1 3 1 2 0 1 1
+ [704] 3 1 2 4 2 1 3 2 4 3 2 2 1 1 5 6 4 2 2 2 2 4 0 1 2 2 2 2 4 5 0 0 0 4 3 3 3
+ [741] 2 4 2 4 0 0 0 0 2 1 0 2 4 3 2 0 2 3 1 3 4 0 1 2 1 2 0 3 1 2 1 2 1 2 1 2 2
+ [778] 2 2 1 1 3 3 1 3 4 3 0 0 4 2 3 2 1 3 2 4 2 2 3 1 2 4 3 3 4 0 1 4 2 1 1 1 3
+ [815] 1 5 2 2 4 2 0 1 3 1 2 0 1 2 1 2 1 0 1 3 2 3 2 0 2 1 4 2 0 0 0 2 4 2 0 0 3
+ [852] 1 0 5 5 2 2 2 0 2 1 3 1 3 2 4 2 4 0 4 1 2 3 2 3 3 2 3 2 2 2 1 3 2 4 2 0 3
+ [889] 3 2 2 0 0 3 2 1 2 4 1 1 1 1 4 3 2 0 3 2 0 1 0 3 2 1 1 1 2 0 2 2 3 3 2 0 0
+ [926] 4 5 2 2 2 1 2 3 1 3 3 4 3 0 1 1 1 0 4 3 5 1 1 2 0 2 2 2 2 5 2 2 3 1 2 3 0
+ [963] 1 2 0 0 2 0 3 1 1 2 5 3 5 1 1 4 0 2 1 3 1 1 2 4 3 3 3 0 1 1 2 2 1 1 2 2 0
+[1000] 2</code></pre>
+</div>
+</div>
 
 
-</section>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
